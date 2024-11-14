@@ -1,0 +1,18 @@
+<html>
+    <head><title>registration</title>
+    </head>
+    <body>
+        <center>
+        <h1>Registration form</h1>
+        <form name="register" method="POST" action="/insertuser/">
+            {% csrf_token %}
+            <pre>
+            Uid:<input type="text" name="tuid" width="200">
+            name: <input type="text" name="tuname" width="200">
+            Email:<input type="text" name="tuemail" width="200">
+            <input type="submit" name="submit" width="200">
+            <pre>
+        </form>
+    </center>
+    </body>
+    </html>

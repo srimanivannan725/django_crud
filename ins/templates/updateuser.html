@@ -1,0 +1,22 @@
+<html>
+    <head><title>registration</title>
+    </head>
+    <body>
+        <center>
+        <h1>Update Registration form</h1>
+        
+        <form name="register" method="POST" action="/updatedatapost/{{findbyid.uid}}">
+            {% csrf_token %}
+            <pre>
+               
+            Uid:<input type="text" name="tuid" value="{{findbyid.uid}}" width="200">
+            name: <input type="text" name="tuname" value="{{findbyid.uname}}" width="200">
+            Email:<input type="text" name="tuemail" value="{{findbyid.uemail}}" width="200">
+            <input type="submit" name="submit" width="200">
+            
+            <pre>
+        </form>
+        
+    </center>
+    </body>
+    </html>
